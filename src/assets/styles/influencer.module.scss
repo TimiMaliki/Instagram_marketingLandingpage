@@ -1,0 +1,69 @@
+@import './varibles.scss';
+@import './utilities.scss';
+
+.influencer {
+    width: 100%;
+    height: 30vh;
+    background: #fff;
+    @include grid;
+    align-items: center;
+    text-align: center;
+
+    .text {
+       @include text;
+    }
+
+    .pic {
+        width: 100%;
+        height: 300px;
+        padding: 0px 220px;
+
+        .Card {
+            width: 240.48px;
+            height: 282px;
+            background: #fff;
+            box-shadow: -8px 30px 80px -25px rgba(82, 82, 82, 0.1);
+            border-radius: 8px;
+
+            .gridinner {
+                @include grid;
+
+                .elipse {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 2px solid skyblue;
+                    background: url('./src/assets/img/Rectangle 40.png');
+                }
+
+                .border,
+                .border1,
+                .border2 {
+                    margin-top: 1rem;
+                    width: 100px;
+                    height: 25px;
+                    background-color: $general;
+                    background: #E0E0E6;
+                    border-radius: 7px;
+                }
+                
+            }
+
+        }
+
+        img {
+            width: 100%;
+            height: 260px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        .likes{
+          @include flex;
+          padding: 0px 20px;
+          gap: 1rem;
+          text-transform: uppercase;
+        }
+    }
+
+
+}

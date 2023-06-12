@@ -1,0 +1,94 @@
+@import './varibles.scss';
+@import './utilities.scss';
+
+.need {
+    width: 100%;
+    height: 130vh;
+    background: #fff;
+    place-content: center;
+    text-align: center;
+
+    & h4 {
+        margin-top: 8rem;
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
+
+    & p {
+        position: absolute;
+        width: 551px;
+        height: 56px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #426666;
+        margin-left: 27rem;
+    }
+
+    .needcol {
+        width: 100%;
+        height: 56vh;
+        margin-top: 9rem;
+        @include flex;
+        gap: 2rem;
+
+
+        .needCard {
+            width: 400px;
+            height: 356px;
+            margin-left: 1rem;
+            position: relative;
+          
+
+            .needcardtext {
+                position: absolute;
+                z-index: 1000;
+                background-color: #fff;
+                width: 300px;
+                height: 200px;
+                transform: translateY(190px);
+                background: #FFFFFF;
+                box-shadow: 0px 40px 100px -30px rgba(0, 0, 0, 0.04);
+                border-radius: 0px 0px 2px 2px;
+            
+                h6 {
+                    margin-top: 2rem;
+                    color: #3B3B43;
+                }
+
+                .follower {
+                    @include grid;
+                    font-size: 19px;
+                    color: #ADADBA;
+                }
+            }
+
+            h2 {
+                margin-top: 3rem;
+                font-size: 15px;
+                color: #B33CDB;
+                cursor: pointer;
+            }
+
+            h3 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 24px;
+                text-align: center;
+                color: #1F1F26;
+            }
+        }
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+}

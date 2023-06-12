@@ -1,0 +1,53 @@
+@import './varibles.scss';
+@import './utilities.scss';
+.story {
+    width: 100%;
+    height: 70vh;
+    background: $general;
+    display: grid;
+    place-content: center;
+    padding: 35px;
+
+    & h1 {
+        font-size: 95px;
+        display: flex;
+        color:#8B3208 ;
+    }
+
+     p {
+        position: absolute;
+        width: 551px;
+        height: 56px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #426666;
+        margin-top: 13rem;
+        margin-left: 27rem;
+    }
+
+    .request {
+        border-radius: 21px;
+        width: 250px;
+        height: 52px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all ease-in 0.5s;
+        margin-left: 25rem;
+        margin-top: 9rem;
+        background: #231A36;
+        color:  #FFFAF9;
+        @include flexCenter;
+        i{
+            padding: 1rem 2rem;
+        }
+    
+    }
+    h3{
+        margin-top: -0.5rem;
+      }
+}

@@ -1,0 +1,111 @@
+@import './varibles.scss';
+@import './utilities.scss';
+
+
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+
+ .body {
+     width: 100%;
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+    overflow:hidden;
+ }
+
+ header {
+     width: 100%;
+     height: 60vh;
+     background: $primary;
+
+     nav {
+         padding: 0px 35px;
+         @include flexBtw;
+
+         .logo {
+             letter-spacing: 3px;
+             color: $text-color;
+             cursor: pointer;
+         }
+
+         ul {
+             @include flex;
+             list-style: none;
+             text-decoration: none;
+         }
+
+         li {
+             text-decoration: none;
+             padding: 2rem;
+             list-style: none;
+
+             a {
+                 text-decoration: none;
+                 color: $text-color;
+             }
+         }
+
+         .demo {
+             background: rgba(255, 255, 255, 0.2);
+             backdrop-filter: blur(35px);
+             border-radius: 21px;
+             width: 154px;
+             height: 42px;
+             border-radius: 25px;
+             cursor: pointer;
+             transition: all ease-in 0.5s;
+
+             &:hover {
+                 background: #B03DE2;
+                 transition: 0.5s;
+             }
+
+             & p {
+                 color: $text-color;
+                 margin-top: 0.5rem;
+             }
+         }
+     }
+
+     .growth {
+        position: absolute;
+         margin-top: 60px;
+         padding: 20px 27px;
+         width: 188px;
+         height: 218px;
+         transform: translateX(980px);
+         background: $text-color;
+         opacity: 0.2;
+         backdrop-filter: blur(40px);
+         border-radius: 8px;
+
+         .yourgrowth {
+             position: absolute;
+             margin-top: 3rem;
+             width: 135px;
+             height: 95px;
+             background: skyblue;
+             border-radius: 8px;
+
+             .yg{
+                @include flex;
+                font-size: 19px;
+                margin-top: 1.5rem;
+                 margin-left: 0.5rem;
+                 font-weight: bolder;
+                 margin-bottom: 15px;
+                 letter-spacing: 1px;
+             }
+             span{
+                 margin-left: 2.5rem;
+                 font-size: 29px;
+                 letter-spacing: 1px;
+             }
+         }
+     }
+
+
+ }

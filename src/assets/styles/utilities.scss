@@ -1,0 +1,75 @@
+//utility classess
+ //flex
+
+
+
+ @mixin flex {
+     display: flex;
+ }
+
+ //FlexCenter
+ @mixin flexCenter {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ //FlexSpaceBetween
+ @mixin flexBtw {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: center;
+ }
+
+ //gridCol
+ @mixin grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-content: space-around;
+ }
+
+ //text 
+ @mixin text{
+    width: 100%;
+    height: 300px;
+    padding: 45px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h5 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #B33CDB;
+    }
+
+    h3 {
+        width: 321px;
+        height: 40px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        color: #1F1F26;
+        margin-left: 9rem;
+    }
+
+    p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #426666;
+
+    }
+ }

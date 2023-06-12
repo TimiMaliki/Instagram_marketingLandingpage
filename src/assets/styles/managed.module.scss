@@ -1,0 +1,75 @@
+@import './varibles.scss';
+@import './utilities.scss';
+
+.managed {
+    width: 100%;
+    height: 50vh;
+    background: #fff;
+    @include grid;
+    align-items: center;
+    text-align: center;
+    margin-top: 12rem;
+
+    .text {
+        @include text;
+    }
+
+    .pic {
+        width: 100%;
+        height: 300px;
+        padding: 0px 220px;
+    }
+
+    .Card {
+        width: 240.48px;
+        height: 295px;
+        background: #fff;
+        box-shadow: -8px 30px 80px -25px rgba(82, 82, 82, 0.1);
+        border-radius: 8px;
+        color: #7C89A9;
+        background: $general;
+    }
+
+    .Circle {
+        width: 235px;
+        height: 235px;
+        border-radius: 50%;
+        border-right: 2px solid #703FFB;
+        border-left: 2px solid #DE287A;
+
+        .Circle1 {
+            margin-left: 2.5rem;
+            margin-top: 2.5rem;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border-right: 2px solid #DE287A;
+            border-left: 2px solid #703FFB;
+
+            .Circle2 {
+                margin-left: 2.5rem;
+                margin-top: 2.5rem;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border-right: 2px solid #FCAE56;
+                border-left: 2px solid rgb(230, 47, 15);
+            }
+
+            .Circle3 {
+                margin-top: 2.4rem;
+                margin-left: 0.5rem;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border-right: 2px solid rgb(230, 47, 15);
+                border-left: 2px solid #FCAE56;
+            }
+        }
+
+        i {
+            cursor: pointer;
+        }
+
+    }
+}
