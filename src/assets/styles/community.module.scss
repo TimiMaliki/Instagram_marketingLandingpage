@@ -11,8 +11,9 @@
     margin-top: 12rem;
 
     .text {
-        @include text;
+        // @include text;
         margin-top: 4rem;
+        margin-right: 9rem;
         h5{
             color: #FBBA33;
         }

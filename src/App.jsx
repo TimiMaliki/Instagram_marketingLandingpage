@@ -2,6 +2,7 @@ import { useState } from 'react'
 import SideContent from './components/SideContent'
 import ClientContent from './components/ClientContent'
 import StoryContent from './components/StoryContent'
+import PropsContent from './components/PropsContent'
 import SolutionContent from './components/SolutionContent'
 import SearchContent from './components/SearchContent'
 import NeedContent from './components/NeedContent'
@@ -9,7 +10,7 @@ import HappyContent from './components/HappyContent'
 import SubContent from './components/SubContent'
 import FooterContent from './components/FooterContent'
 import style from './assets/styles/index.module.scss'
-import footerStyle from './assets/styles/footer.module.scss'
+
 
 
 
@@ -48,14 +49,25 @@ function App() {
       </header>
 
       <StoryContent />
+
       <ClientContent />
+
       <SolutionContent />
+
+      <PropsContent  />
+   
       <SideContent />
+
       <SearchContent />
+
       <NeedContent />
+
       <HappyContent />
+
       <SubContent />
+
       <FooterContent />
+  
       
       
       

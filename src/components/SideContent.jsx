@@ -2,37 +2,8 @@ import influencerStyle from '../assets/styles/influencer.module.scss'
 import communityStyle from '../assets/styles/community.module.scss'
 import managedStyle from '../assets/styles/managed.module.scss'
 
-function SideContent(){
-    return <div> 
-         {/* influencer */}
-      <div className={influencerStyle.influencer}>
-        <div className={influencerStyle.text}>
-          <h5>Influencer</h5>
-          <h3>Influencer marketing</h3>
-          <p>Create infinite pieces of content with our influencer product. Build,streamline,manage large-scale influencer programs</p>
-        </div>
-
-        <div className={influencerStyle.pic}>
-          <div className={influencerStyle.Card}>
-            <div className={influencerStyle.gridinner}>
-              <div className={influencerStyle.elipse}>
-              </div>
-              <div className={influencerStyle.border}>
-              </div>
-              <div className={influencerStyle.border1}>
-              </div>
-              <div className={influencerStyle.border2}>
-              </div>
-            </div>
-
-            <img src="./src/assets/img/Rectangle 40.png" alt="" />
-            <div className={influencerStyle.likes}>
-            <i class="bi bi-heart-fill"></i>
-              <p>23.34K Likes</p>
-            </div>
-          </div>
-        </div>
-      </div>
+function SideContent(props){
+    return <div>  
       {/* community */}
       <div className={communityStyle.community}>
         <div className={communityStyle.unity}>
