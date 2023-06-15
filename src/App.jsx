@@ -3,6 +3,7 @@ import SideContent from './components/SideContent'
 import ClientContent from './components/ClientContent'
 import StoryContent from './components/StoryContent'
 import InfluencerContent from './components/InfluencerContent'
+import CommunityContent from './components/InfluencerContent'
 import SolutionContent from './components/SolutionContent'
 import SearchContent from './components/SearchContent'
 import NeedContent from './components/NeedContent'
@@ -35,12 +36,12 @@ function App() {
           </div>
         </nav>
         <div className={style.growth}>
-             OluwaTimi Lehin M.
+          OluwaTimi Lehin M.
           <div className={style.yourgrowth}>
             <div className={style.yg}>
               <div className={style.span}>
-              Your Growth
-              3,000
+                Your Growth
+                3,000
               </div>
             </div>
           </div>
@@ -53,8 +54,10 @@ function App() {
       <ClientContent />
 
       <SolutionContent />
-      
-<InfluencerContent />
+
+      <InfluencerContent />
+
+      <CommunityContent />
 
       <SideContent />
 
@@ -67,10 +70,10 @@ function App() {
       <SubContent />
 
       <FooterContent />
-  
-      
-      
-      
+
+
+
+
 
     </div>
   )

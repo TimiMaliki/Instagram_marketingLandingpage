@@ -2,30 +2,10 @@ import influencerStyle from '../assets/styles/influencer.module.scss'
 import communityStyle from '../assets/styles/community.module.scss'
 import managedStyle from '../assets/styles/managed.module.scss'
 
-function SideContent(props){
+function SideContent(){
     return <div>  
       {/* community */}
-      <div className={communityStyle.community}>
-        <div className={communityStyle.unity}>
-          <div className={communityStyle.unityline1}>
-            <img src="./src/assets/img/Rectangle 40.png" alt="" />
-          </div>
-          <div className={communityStyle.unityline2}>
-            <img src="./src/assets/img/Rectangle 40.png" alt="" />
-            <img src="./src/assets/img/Rectangle 40.png" alt="" />
-          </div>
-          <div className={communityStyle.unityline4}>
-            <img src="./src/assets/img/Rectangle 40.png" alt="" />
-          </div>
-
-        </div>
-        <div className={communityStyle.text}>
-          <h5><span>Community</span></h5>
-          <h3>Community marketing</h3>
-          <p>Bring your relationships to new heights with our community product. Discover your biggest enthusiasts</p>
-        </div>
-
-      </div>
+  
       {/* service managed */}
       <div className={managedStyle.managed}>
       <div className={managedStyle.text}>
@@ -49,7 +29,7 @@ function SideContent(props){
             </div>
             </div>
             
-              
+              </div>
               
               </div>
 
@@ -57,7 +37,7 @@ function SideContent(props){
           </div>
 
       </div>
-    </div>
+    
 }
 
 export default SideContent
