@@ -2,7 +2,7 @@ import { useState } from 'react'
 import SideContent from './components/SideContent'
 import ClientContent from './components/ClientContent'
 import StoryContent from './components/StoryContent'
-import PropsContent from './components/PropsContent'
+import InfluencerContent from './components/InfluencerContent'
 import SolutionContent from './components/SolutionContent'
 import SearchContent from './components/SearchContent'
 import NeedContent from './components/NeedContent'
@@ -53,9 +53,9 @@ function App() {
       <ClientContent />
 
       <SolutionContent />
+      
+<InfluencerContent />
 
-      <PropsContent  />
-   
       <SideContent />
 
       <SearchContent />

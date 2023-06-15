@@ -1,6 +1,7 @@
-
-function PropsContent(props){
+ 
+ function NewpropsContent(props){
     return <div>
+    
 
         <div className={influencerStyle.influencer}>
         <div className={influencerStyle.text}>
@@ -10,7 +11,8 @@ function PropsContent(props){
           
         </div>
         </div>
-    </div>
-}
 
-export default PropsContent
+</div>
+ }
+
+ export default NewpropsContent

@@ -1,15 +1,25 @@
 import influencerStyle from '../assets/styles/influencer.module.scss'
+import NewpropsContent from './NewpropsContent'
 
-function InfleuncerContent(){
+function InfleuncerContent(props){
     return <div>
 
         {/* influencer props */}
-        
-       <PropsContent   name="Influencer"  title="Influencer marketing">
-       <p>Create 
-      infinite pieces of content with our influencer product. Build,streamline,manage l
-      arge-scale influencer programs</p>
-       </PropsContent>
+        <div className={influencerStyle.influencer}>
+        <div className={influencerStyle.text}>
+       
+      
+<NewpropsContent
+name="Influencer" 
+title="Influencer marketing" 
+
+// Create 
+// infinite pieces of content with our influencer product. Build,streamline,manage large-scale influencer programs
+/>
+
+
+          
+        </div>
 
         <div className={influencerStyle.pic}>
           <div className={influencerStyle.Card}>
@@ -31,8 +41,7 @@ function InfleuncerContent(){
             </div>
           </div>
         </div>
-      
-    
+      </div>
     
         
     </div>
