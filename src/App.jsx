@@ -19,7 +19,7 @@ import style from './assets/styles/index.module.scss'
 function App() {
 
   return (
-    <div className={style.body}>
+    <div>
       <header>
         <nav>
           <div className={style.logo}><h2>Maliki.</h2></div>
@@ -75,8 +75,8 @@ function App() {
 
 
 
-
-    </div>
+</div>
+    
   )
 }
 

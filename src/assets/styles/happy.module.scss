@@ -32,7 +32,8 @@
 
     .happygrid {
         margin-top: 8rem;
-        @include grid;
+        display: flex;
+        padding: 0px 120px;
 
         .happytext {
             width: 100%;
