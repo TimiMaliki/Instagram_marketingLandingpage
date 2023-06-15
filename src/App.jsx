@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import SideContent from './components/SideContent'
 import ClientContent from './components/ClientContent'
 import StoryContent from './components/StoryContent'
 import InfluencerContent from './components/InfluencerContent'
-import CommunityContent from './components/InfluencerContent'
+import Community from './components/Community'
+import Service from './components/Service'
 import SolutionContent from './components/SolutionContent'
 import SearchContent from './components/SearchContent'
 import NeedContent from './components/NeedContent'
@@ -57,9 +57,9 @@ function App() {
 
       <InfluencerContent />
 
-      <CommunityContent />
+      <Community />
 
-      <SideContent />
+      <Service />
 
       <SearchContent />
 

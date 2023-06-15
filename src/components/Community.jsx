@@ -3,6 +3,8 @@ import NewpropsContent from './NewpropsContent'
 
 
 function Community() {
+     {/* community */}
+     
     return <div>
         <div className={communityStyle.community}>
             <div className={communityStyle.unity}>

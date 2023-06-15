@@ -8,8 +8,13 @@ function InfleuncerContent() {
     <div className={influencerStyle.influencer}>
       <div className={influencerStyle.text}>
 
+        <NewpropsContent
+          name="Influencer"
+          title="Influencer marketing"
+          text="Create infinite pieces of content with our influencer product. Build,streamline,manage large-scale influencer programs"
 
-      
+        />
+
       </div>
 
       <div className={influencerStyle.pic}>
