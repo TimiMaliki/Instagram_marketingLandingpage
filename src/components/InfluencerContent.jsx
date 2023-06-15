@@ -12,9 +12,8 @@ function InfleuncerContent(props){
 <NewpropsContent
 name="Influencer" 
 title="Influencer marketing" 
+text="Create infinite pieces of content with our influencer product. Build,streamline,manage large-scale influencer programs"
 
-// Create 
-// infinite pieces of content with our influencer product. Build,streamline,manage large-scale influencer programs
 />
 
 
