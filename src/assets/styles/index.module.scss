@@ -1,124 +1,147 @@
 @import './varibles.scss';
 @import './utilities.scss';
+@import './media.mdule.scss';
 
 
- * {
-     margin: 0px;
-     padding: 0px;
-     box-sizing: border-box;
- }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
- .body {
-     width: 100%;
-     height: 100%;
-     margin: 0px;
-     padding: 0px;
-    overflow:hidden;
- }
+.body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    @include smallDevices {
+        width: 100%;
+        overflow: hidden;
+    }
+}
 
- header {
-     width: 100%;
-     height: 60vh;
-     background: $primary;
+header {
+    width: 100%;
+    height: 60vh;
+    background: $primary;
 
-     nav {
-         padding: 0px 35px;
-         @include flexBtw;
 
-         .logo {
-             letter-spacing: 3px;
-             color: $text-color;
-             cursor: pointer;
-         }
+    nav {
+        padding: 0px 35px;
+        @include flexBtw;
 
-         ul {
-             @include flex;
-             list-style: none;
-             text-decoration: none;
-         }
+        @include smallDevices {
+            visibility: hidden;
+        }
 
-         li {
-             text-decoration: none;
-             padding: 2rem;
-             list-style: none;
+        .logo {
+            letter-spacing: 3px;
+            color: $text-color;
+            cursor: pointer;
+        }
 
-             a {
-                 text-decoration: none;
-                 color: $text-color;
-                 transition: all ease-in 0.5s;;
-                 &:hover {
+        ul {
+            @include flex;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        li {
+            text-decoration: none;
+            padding: 2rem;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $text-color;
+                transition: all ease-in 0.5s;
+                ;
+
+                &:hover {
                     color: #000;
                     transition: 0.5s;
                 }
-             }
-         }
+            }
+        }
 
-         .demo {
-             background: rgba(255, 255, 255, 0.2);
-             backdrop-filter: blur(35px);
-             border-radius: 21px;
-             width: 154px;
-             height: 42px;
-             border-radius: 25px;
-             cursor: pointer;
-             transition: all ease-in 0.5s;
+        .demo {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(35px);
+            border-radius: 21px;
+            width: 154px;
+            height: 42px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all ease-in 0.5s;
 
-             &:hover {
-                 background: #B03DE2;
-                 transition: 0.5s;
-             }
+            &:hover {
+                background: #B03DE2;
+                transition: 0.5s;
+            }
 
-             & p {
-                 color: $text-color;
-                 margin-top: 0.5rem;
-             }
-         }
-     }
+            & p {
+                color: $text-color;
+                margin-top: 0.5rem;
+            }
+        }
+    }
 
-     .growth {
+    .growth {
         position: absolute;
-         margin-top: 60px;
-         padding: 20px 27px;
-         width: 188px;
-         height: 218px;
-         transform: translateX(980px);
-         background: $text-color;
-         opacity: 0.2;
-         backdrop-filter: blur(40px);
-         border-radius: 8px;
-         cursor: pointer;
+        margin-top: 60px;
+        padding: 20px 27px;
+        width: 188px;
+        height: 218px;
+        transform: translateX(980px);
+        background: $text-color;
+        opacity: 0.2;
+        backdrop-filter: blur(40px);
+        border-radius: 8px;
+        cursor: pointer;
 
-         .yourgrowth {
-             position: absolute;
-             margin-top: 3rem;
-             width: 135px;
-             height: 95px;
-             background: skyblue;
-             border-radius: 8px;
-             text-align: center;
-             cursor: pointer;
-             transition: all ease-in 0.5s;
-             &:hover{
+        @include smallDevices {
+            transform: translateX(70px);
+            width: 200px;
+            height: 258px;
+            font-size: 27px;
+        }
+
+        .yourgrowth {
+            position: absolute;
+            margin-top: 3rem;
+            width: 135px;
+            height: 120px;
+            background: skyblue;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all ease-in 0.5s;
+            
+            &:hover {
                 background-color: red;
-                 color: aqua;
-             }
+                color: aqua;
+            }
 
-             .yg{
+            .yg {
                 @include flex;
                 font-size: 19px;
                 margin-top: 1.5rem;
-                 margin-left: 0.5rem;
-                 font-weight: bolder;
-                 margin-bottom: 15px;
-                 letter-spacing: 1px;
-             }
-             span{
-                 margin-left: 2.5rem;
-                 font-size: 29px;
-                 letter-spacing: 1px;
-             }
-         }
-     }
+                margin-left: 0.5rem;
+                font-weight: bolder;
+                margin-bottom: 15px;
+                letter-spacing: 1px;
+                @include smallDevices {
+                    font-size: 27px;
+                }
+            }
+
+            span {
+                margin-left: 2.5rem;
+                font-size: 29px;
+                letter-spacing: 1px;
+            }
+        }
+    }
 
 
- }
+}
