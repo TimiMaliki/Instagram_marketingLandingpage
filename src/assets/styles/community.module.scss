@@ -9,18 +9,11 @@
     align-items: center;
     text-align: center;
     margin-top: 12rem;
-    @include smallDevices {
-        width: 50%;
-      }
 
     .text {
         // @include text;
         margin-top: 4rem;
         margin-right: 9rem;
-        @include smallDevices {
-           font-size: 24px;
-           margin-left: -8rem;
-          }
         h5{
             color: #FBBA33;
         }

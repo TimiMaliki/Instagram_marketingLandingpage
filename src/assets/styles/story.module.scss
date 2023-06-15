@@ -8,13 +8,13 @@
     display: grid;
     place-content: center;
     padding: 35px;
-   
     & h1 {
         font-size: 95px;
         display: flex;
         color:#8B3208 ;
         @include smallDevices {
            font-size: 35px;
+           text-align: center;
         }
     }
 
@@ -34,7 +34,7 @@
         margin-left: 27rem;
         @include smallDevices {
             font-size: 25px;
-            margin-left: 28rem;
+            margin-left: 17rem;
          }
     }
 
@@ -51,7 +51,7 @@
         color:  #FFFAF9;
         @include smallDevices {
             font-size: 25px;
-            margin-left: -8rem;
+            margin-left: 4rem;
             
          }
         @include flexCenter;

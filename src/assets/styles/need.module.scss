@@ -1,5 +1,6 @@
 @import './varibles.scss';
 @import './utilities.scss';
+@import './media.mdule.scss';
 
 .need {
     width: 100%;
@@ -36,13 +37,11 @@
         @include flex;
         gap: 2rem;
 
-
         .needCard {
             width: 400px;
             height: 356px;
             margin-left: 1rem;
             position: relative;
-          
 
             .needcardtext {
                 position: absolute;
@@ -54,7 +53,6 @@
                 background: #FFFFFF;
                 box-shadow: 0px 40px 100px -30px rgba(0, 0, 0, 0.04);
                 border-radius: 0px 0px 2px 2px;
-            
                 h6 {
                     margin-top: 2rem;
                     color: #3B3B43;
@@ -82,12 +80,21 @@
                 line-height: 24px;
                 text-align: center;
                 color: #1F1F26;
+                @include smallDevices {
+                   font-size: 19px;
+                   padding: 0px 34px;
+                }
             }
         }
 
         img {
             width: 100%;
             object-fit: contain;
+
+            @include smallDevices {
+                width: 100%;
+
+            }
         }
     }
 

@@ -7,7 +7,9 @@
     background: #fff;
     text-align: center;
     color: #B3B7BC;;
-
+    @include smallDevices {
+     width: 1100px;
+     }
     & h5{
         margin-top: 8rem;
         font-size: 19px

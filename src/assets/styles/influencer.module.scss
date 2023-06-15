@@ -10,8 +10,8 @@
     align-items: center;
     text-align: center;
     @include smallDevices {
-       width: 100%;
-       display: inline-block;
+       width: 1100px;
+       margin-top: 5rem;
      }
 
     .text {
