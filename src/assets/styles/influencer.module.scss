@@ -1,5 +1,6 @@
 @import './varibles.scss';
 @import './utilities.scss';
+@import './media.mdule.scss';
 
 .influencer {
     width: 100%;
@@ -8,6 +9,10 @@
     @include grid;
     align-items: center;
     text-align: center;
+    @include smallDevices {
+       width: 100%;
+       display: inline-block;
+     }
 
     .text {
        @include text;

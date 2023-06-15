@@ -1,5 +1,6 @@
 //utility classess
  //flex
+ @import './media.mdule.scss';
 
 
 
@@ -39,6 +40,11 @@
     align-items: center;
     text-align: center;
 
+    @include smallDevices {
+        width: 400px;
+        margin-left: 9rem;
+      }
+
     h5 {
         font-family: 'Inter';
         font-style: normal;
@@ -48,6 +54,12 @@
         letter-spacing: 0.2em;
         text-transform: uppercase;
         color: #B33CDB;
+        @include smallDevices {
+            width: 400px;
+            font-size: 19px;
+            margin-left: -2rem;
+          }
+       
     }
 
     h3 {
@@ -60,6 +72,11 @@
         line-height: 40px;
         color: #1F1F26;
         margin-left: 6rem;
+
+        @include smallDevices {
+            margin-left: 0.5rem;
+            font-size: 30px;
+          }
     }
 
     p {
@@ -70,6 +87,8 @@
         line-height: 28px;
         letter-spacing: 0.01em;
         color: #426666;
-
+        @include smallDevices {
+            font-size: 19px;
+          }
     }
  }

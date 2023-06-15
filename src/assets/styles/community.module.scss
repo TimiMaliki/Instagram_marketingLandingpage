@@ -9,11 +9,18 @@
     align-items: center;
     text-align: center;
     margin-top: 12rem;
+    @include smallDevices {
+        width: 50%;
+      }
 
     .text {
         // @include text;
         margin-top: 4rem;
         margin-right: 9rem;
+        @include smallDevices {
+           font-size: 24px;
+           margin-left: -8rem;
+          }
         h5{
             color: #FBBA33;
         }
@@ -30,12 +37,14 @@
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
+                
             }
         }
          .unityline2{
             @include flex;
             gap: 8rem;
             padding: 0px 270px;
+        
             & img{
                 width: 50px;
                 height: 50px;

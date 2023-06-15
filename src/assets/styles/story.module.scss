@@ -8,17 +8,13 @@
     display: grid;
     place-content: center;
     padding: 35px;
-    @include smallDevices {
-        width: 100%;
-       
-    }
+   
     & h1 {
         font-size: 95px;
         display: flex;
         color:#8B3208 ;
         @include smallDevices {
            font-size: 35px;
-           display: grid;
         }
     }
 
@@ -36,6 +32,10 @@
         color: #426666;
         margin-top: 13rem;
         margin-left: 27rem;
+        @include smallDevices {
+            font-size: 25px;
+            margin-left: 28rem;
+         }
     }
 
     .request {
@@ -49,6 +49,11 @@
         margin-top: 9rem;
         background: #231A36;
         color:  #FFFAF9;
+        @include smallDevices {
+            font-size: 25px;
+            margin-left: -8rem;
+            
+         }
         @include flexCenter;
         i{
             padding: 1rem 2rem;
