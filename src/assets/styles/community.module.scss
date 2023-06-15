@@ -9,18 +9,17 @@
     align-items: center;
     text-align: center;
     margin-top: 12rem;
-
     .text {
         // @include text;
         margin-top: 4rem;
-        margin-right: 9rem;
+        margin-right: 1rem;
         h5{
             color: #FBBA33;
         }
      }
  
     .unity{
-        width: 100%;
+        width: 400px;
         height: 400px;
          .unityline1 , .unityline2 , .unityline3 , .unityline4{
         padding: 60px;
@@ -30,14 +29,12 @@
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
-                
             }
         }
          .unityline2{
             @include flex;
             gap: 8rem;
-            padding: 0px 270px;
-        
+            padding: 0px 70px;
             & img{
                 width: 50px;
                 height: 50px;

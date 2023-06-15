@@ -35,7 +35,7 @@
         height: 56vh;
         margin-top: 9rem;
         @include flex;
-        gap: 2rem;
+        padding: 0px 80px;
 
         .needCard {
             width: 400px;

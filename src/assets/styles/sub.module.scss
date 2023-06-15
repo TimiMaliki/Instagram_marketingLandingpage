@@ -14,6 +14,11 @@
         background: radial-gradient(96.32% 571.83% at 98.4% 19.88%, #8FB3FF 0%, #9D6BE8 27.72%, #DE2778 54.29%, #B03DE2 100%);
         border-radius: 20px;
 
+        @include smallDevices {
+            width: 500px;
+            height: 358px;
+        }
+
         & h4 {
             font-size: 40px;
             margin-bottom: 1rem;
@@ -39,6 +44,13 @@
             letter-spacing: 0.01em;
             color: #fff;
             margin-left: 13rem;
+
+            @include smallDevices {
+                width: 351px;
+                height: 26px;
+                margin-left: 4.3rem;
+                font-size: 20px;
+            }
         }
 
         .subrequest {
@@ -57,7 +69,13 @@
             justify-content: center;
             text-align: center;
             padding: 1rem;
-            i{
+
+            @include smallDevices {
+                margin-top: 9rem;
+                margin-left: 8.3rem;
+            }
+
+            i {
                 padding: 1rem 2rem;
             }
         }
@@ -65,6 +83,9 @@
         .subrequest h3 {
             margin-top: -0.5rem;
             color: #DE2778;
+            @include smallDevices {
+               font-size: 2rem;
+            }
         }
     }
 }
