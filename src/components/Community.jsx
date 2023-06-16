@@ -1,5 +1,6 @@
 import communityStyle from '../assets/styles/community.module.scss'
 import NewpropsContent from './NewpropsContent'
+import Rectangleimage from '../assets/img/Rectangle40.png'
 
 
 function Community() {
@@ -9,14 +10,14 @@ function Community() {
         <div className={communityStyle.community}>
             <div className={communityStyle.unity}>
                 <div className={communityStyle.unityline1}>
-                    <img src="./src/assets/img/Rectangle 40.png" alt="" />
+                    <img src={Rectangleimage} alt="" />
                 </div>
                 <div className={communityStyle.unityline2}>
-                    <img src="./src/assets/img/Rectangle 40.png" alt="" />
-                    <img src="./src/assets/img/Rectangle 40.png" alt="" />
+                    <img src={Rectangleimage} alt="" />
+                    <img src={Rectangleimage} alt="" />
                 </div>
                 <div className={communityStyle.unityline4}>
-                    <img src="./src/assets/img/Rectangle 40.png" alt="" />
+                    <img src={Rectangleimage} alt="" />
                 </div>
 
             </div>

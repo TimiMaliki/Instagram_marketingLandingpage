@@ -1,4 +1,5 @@
 import needStyle from '../assets/styles/need.module.scss'
+import Mypics from '../assets/img/image01.png'
 
 function NeedContent() {
   return <div>
@@ -12,7 +13,7 @@ function NeedContent() {
       <div className={needStyle.needcol}>
         <div className={needStyle.needCard}>
           <div className={needStyle.needcardtext}>
-          <img src="./src/assets/img/image01.png" alt="" />
+          <img src={Mypics} alt="" />
           <h6>Rebel Clothing</h6>
             <div className={needStyle.needflex}>
               <div className={needStyle.follower}>

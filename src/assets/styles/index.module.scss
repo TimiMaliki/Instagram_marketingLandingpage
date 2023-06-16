@@ -18,12 +18,14 @@ body{
     @include smallDevices {
                 width: 1000px;
                 height: auto;
-                overflow: hidden;
             }
             @include mediumDevices {
                 width:1200px;
                 height: auto;
-                overflow: hidden;
+            }
+            @include largeDevices {
+                width:1200px;
+                height: auto;
             }
 }
 
